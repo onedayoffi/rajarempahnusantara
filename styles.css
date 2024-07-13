@@ -1,0 +1,250 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan elemen di tengah */
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #204e3b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.paste-btn {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.paste-btn:hover {
+    background-color: #2980b9;
+}
+
+.clear-btn {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.clear-btn:hover {
+    background-color: #2980b9;
+}
+
+
+.invoice-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #a0cac0;
+}
+
+.title {
+    text-align: left;
+}
+
+.invoice-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.shop-name {
+    font-size: 1em;
+    margin: 0;
+    color: #3b8578;
+}
+
+.info {
+    text-align: right;
+    margin-bottom: 20px;
+    font-size: 0.7em;
+}
+
+.invoice-number {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.billed-to {
+    margin-bottom: 20px;
+}
+
+.billed-to h3 {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.billed-to p {
+    margin: 5px 0;
+    font-size: 0.7em;
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.invoice-table th,
+.invoice-table td {
+    border: none;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.invoice-table th {
+    background-color: #ecf7f5;
+    font-size: 0.8em;
+    border-bottom: 1px solid rgb(228, 228, 228);
+}
+
+.invoice-summary {
+    margin-bottom: 20px;
+}
+
+.invoice-summary table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-summary td {
+    padding: 8px;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+}
+
+.invoice-summary td:first-child {
+    text-align: left;
+    padding-left: 70%;
+}
+
+
+.invoice-summary span {
+    font-weight: bold;
+    color: #0e1d17;
+}
+
+.shop-info {
+    text-align: right;
+    margin-top: 20px;
+
+    padding-top: 10px;
+}
+
+.shop-info h2 {
+    margin: 5px 0;
+    color: #3b8578;
+}
+
+.shop-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.print-btn {
+    margin-top: 20px;
+}
+
+#qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+    .input-container {
+        width: 95%;
+    }
+
+    .invoice-container {
+        width: 95%;
+    }
+
+    .paste-btn {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .invoice-table th,
+    .invoice-table td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .invoice-summary p {
+        font-size: 10px;
+    }
+
+    .invoice-summary td:first-child {
+        text-align: left;
+        padding-left: 70%;
+        font-size: 0.7em;
+    }
+
+    .invoice-summary table span {
+        font-size: 0.7em; /* Atur ukuran teks sesuai kebutuhan */
+        margin-right: 11px;
+    }
+
+    .shop-info h2 {
+        font-size: 0.8em;
+    }
+    .shop-info p {
+        font-size: 0.6em;
+    }
+}
